@@ -1,0 +1,16 @@
+query AnimeFinished($perPage: Int) {
+  Page(perPage: $perPage) {
+    pageInfo {
+      perPage
+    }
+    media(type: ANIME, status: FINISHED) {
+      id
+      title {
+        romaji
+        english
+        native
+        userPreferred
+      }
+    }
+  }
+}

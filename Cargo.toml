@@ -1,13 +1,9 @@
-[package]
-name = "anirisuto"
-version = "0.1.0"
+[workspace]
+members = [
+    "anirisuto",
+    "anirisuto-gql",
+]
+
+[workspace.package]
 authors = ["koopa1338 <sinner1991@gmail.com>"]
 edition = "2021"
-
-[dependencies]
-crossterm = "0.25.0"
-serde = { version = "1.0.144", features = ["derive"] }
-thiserror = "1.0.32"
-tokio = { version = "1.20.1", features = ["full"] }
-tui = { version = "0.19.0", features = ["serde"] }
-unicode-width = "0.1.9"

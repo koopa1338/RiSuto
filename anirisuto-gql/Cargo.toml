@@ -1,0 +1,10 @@
+[package]
+name = "anirisuto-gql"
+version = "0.0.1"
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+graphql_client = {version = "0.12", features = ["reqwest-blocking"] }
+serde = "1.0"
+reqwest = { version = "0.11", features = ["json", "blocking"]}
